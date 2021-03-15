@@ -10,8 +10,8 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
-SERVER = 'LAPTOP-A84E5O9M\SQLEXPRESS'
-DATABASE = 'project001'
+SERVER = '#servername'
+DATABASE = '#DatabaseName'
 DRIVER = 'SQL Server Native Client 11.0'
 DATABASE_CONNECTION = f'mssql://{SERVER}/{DATABASE}?trusted_connection=yes&driver={DRIVER}'
 app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_CONNECTION
