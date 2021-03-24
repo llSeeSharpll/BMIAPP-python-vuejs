@@ -34,6 +34,7 @@ const authStore = {
             state.isProcessing = isProcessing
         },
         setLogout(state) {
+            sessionStorage.removeItem('username')
             sessionStorage.removeItem('loginToken');
             state.isUserLoggedIn = false;
         }
