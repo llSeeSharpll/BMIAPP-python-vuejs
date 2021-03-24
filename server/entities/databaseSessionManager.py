@@ -6,8 +6,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-SERVER = 'LAPTOP-A84E5O9M\SQLEXPRESS'
-DATABASE = 'project001'
+SERVER = '#servername'
+DATABASE = '#database name'
 DRIVER = 'SQL Server Native Client 11.0'
 DATABASE_CONNECTION = f'mssql://{SERVER}/{DATABASE}?trusted_connection=yes&driver={DRIVER}'
 engine = create_engine(DATABASE_CONNECTION, echo=True)
