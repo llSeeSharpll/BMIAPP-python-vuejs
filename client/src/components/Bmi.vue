@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div v-if="name==undefined">Enter your name</div><input type=text v-model="name"/><br/>
     <label>Enter your hieght:<input type="text" v-model="bmi.hieght" /></label><br/>
     <label>Enter your wieghtt:<input type="text" v-model="bmi.wieght" /></label><br/>
     <button @click="CalculateBmi">Calcualte BMI</button>
